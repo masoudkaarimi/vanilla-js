@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Password Strength - Meter And Live Checker</title>
+    <script src="https://kit.fontawesome.com/86053d2041.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <section>
+        <h1 class="title">Password Requirements</h1>
+        <div class="row">
+            <div class="col-6">
+                <!-- password -->
+                <div class="box-input password">
+                    <label for="password"> Create New Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Must be at least 8 characters"/>
+                    <div class="password-status">
+                        <span class="fa fa-eye"></span>
+                    </div>
+                    <div class="input-info"></div>
+                </div>
+
+                <!-- confirm password -->
+                <div class="box-input confirm-password">
+                    <label for="confirm-password">
+                        Confirm New Password:
+                    </label>
+                    <input type="password" name="confirm-password" id="confirm-password"
+                           placeholder="Must be at least 8 characters"/>
+                    <div class="input-info"></div>
+                </div>
+
+                <button type="button" class="btn">Create Now</button>
+            </div>
+
+            <div class="col-6">
+                <!-- box password strength -->
+                <div class="box-password-strength">
+                    <div>
+                        <h4>Password Strength</h4>
+                        <div class="password-meter">
+                            <div class="password-meter-bar"></div>
+                        </div>
+                    </div>
+                    <span class="password-meter-text"></span>
+                </div>
+
+                <!-- box password rules -->
+                <div class="box-password-rules">
+                    <h4>Password Rules:</h4>
+                    <div class="password-rules">
+                        <div class="item-least-characters">
+                            <i class="fa"></i>
+                            <span>Contains at Least 8 Characters</span>
+                        </div>
+                        <div class="item-digit">
+                            <i class="fa"></i>
+                            <span>Contains at Least One Number(0-9) or More</span>
+                        </div>
+                        <div class="item-uppercase">
+                            <i class="fa"></i>
+                            <span>
+									Contains at Least One Uppercase Letter (A-Z) or
+									More
+								</span>
+                        </div>
+                        <div class="item-lowercase">
+                            <i class="fa"></i>
+                            <span>
+									Contains at Least One Lowercase Letter (a-z) or
+									More
+								</span>
+                        </div>
+                        <div class="item-special-character">
+                            <i class="fa"></i>
+                            <span>
+									Contains at Least One Special Character (~ ! @ # $
+									% ^ & * ( ) _ + { } " ' : ? / \ | . ,) or More
+								</span>
+                        </div>
+                        <div class="item-spaces">
+                            <i class="fa"></i>
+                            <span>No Space Allowed</span>
+                        </div>
+                        <!-- <div class="item-user-id">
+                                <i class="fa"></i>
+                                <span>Can't Match User ID</span>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
