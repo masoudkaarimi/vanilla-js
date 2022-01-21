@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Calculate Average</title>
+    <link rel="stylesheet" href="scss/style.css"/>
+</head>
+<body class="">
+<!-- container -->
+<div class="container">
+    <!-- row -->
+    <header class="row">
+        <!-- content-box -->
+        <div class="content-box">
+            <h1>Calculate Average</h1>
+            <a href="#" type="button"  id="theme-switcher">
+                <svg
+                        width="28"
+                        height="30"
+                        viewBox="0 0 28 30"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M14.7884 29.9992C20.4472 30.0596 25.6163 26.7525 28 21.5471C26.4999 22.2109 24.8752 22.536 23.2389 22.4999C16.8247 22.4926 11.6267 17.2207 11.6194 10.7154C11.6836 6.31502 14.0776 2.28998 17.8854 0.179508C16.8584 0.0469001 15.8235 -0.0124725 14.7884 0.00217452C6.62077 0.00217452 0 6.71729 0 15.0007C0 23.2843 6.62077 29.9992 14.7884 29.9992V29.9992Z"
+                            fill="#546E7A"
+                    />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- row -->
+    <section class="row">
+        <!-- content-box -->
+        <div class="content-box">
+            <!-- block-inputs -->
+            <ol class="block-inputs">
+                <!-- box-input -->
+                <li class="box-input">
+                    <input type="text"/>
+                </li>
+
+                <!-- box-input -->
+                <li class="box-input">
+                    <input type="text"/>
+                </li>
+
+                <!-- box-input -->
+                <li class="box-input">
+                    <input type="text"/>
+                </li>
+            </ol>
+
+            <!-- Button Add Input -->
+            <button type="button" class="btn" id="add-input">
+                Add New Item
+            </button>
+        </div>
+
+        <!-- content-box -->
+        <div class="content-box">
+            <table>
+                <tr>
+                    <th>Sum</th>
+                    <td id="box-sum">0</td>
+                </tr>
+                <tr>
+                    <th>Count</th>
+                    <td id="box-count">0</td>
+                </tr>
+                <tr>
+                    <th>Average</th>
+                    <td id="box-average">0</td>
+                </tr>
+            </table>
+
+            <!-- Button Calculate -->
+            <button type="button" class="btn" id="calculate-average">
+                Calculate
+            </button>
+        </div>
+    </section>
+
+    <!-- row -->
+    <footer class="row">
+        <!-- social-media -->
+        <div class="social-media">
+            <a href="https://github.com/masoudkaarimi/" target="_blank">
+                <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="github"
+                        class="svg-inline--fa fa-github fa-w-16"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512"
+                >
+                    <path
+                            fill="currentColor"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path>
+                </svg>
+            </a>
+
+            <a href="https://twitter.com/masoudkaarimi/" target="_blank">
+                <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="twitter"
+                        class="svg-inline--fa fa-twitter fa-w-16"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                >
+                    <path
+                            fill="currentColor"
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    ></path>
+                </svg>
+            </a>
+
+            <a href="https://t.me/masoudkaarimi/" target="_blank">
+                <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="telegram"
+                        class="svg-inline--fa fa-telegram fa-w-16"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512"
+                >
+                    <path
+                            fill="currentColor"
+                            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
+                    ></path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- copy-right -->
+        <div class="copy-right">
+            <span></span>
+            <span><span id="copy-right-year"></span> - Made by</span>
+            <a href="http://MasoudKarimi.ir" target="_blank">Masoud Karimi</a>
+        </div>
+    </footer>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

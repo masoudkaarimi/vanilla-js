@@ -1,0 +1,123 @@
+$bg-primary: #008aff;
+$bg-secondary: #0097a7;
+$bg-body: #37474f;
+$bg-content: #263238;
+$bg-input: #37474f;
+
+$bg-cell-even: #546e7a;
+$bg-cell-odd: #37474f;
+
+$bg-hover: #37474f;
+
+$text-white: #fff;
+$text-light: #37474f;
+$text-dark: #fff;
+
+$border-primary: #006dc9;
+$border-secondary: #006a75;
+$border-content: #314047;
+$border-input: #37474f;
+
+$shadow-sm: rgba(0, 0, 0, 0.05);
+$shadow-md: rgba(0, 0, 0, 0.1);
+$shadow-lg: rgba(0, 0, 0, 0.2);
+
+body.dark {
+  background-color: $bg-body !important;
+
+  .container {
+    .row {
+      .btn {
+        color: $text-light !important;
+        box-shadow: 0 0 30px $shadow-md !important;
+
+        &:hover {
+          box-shadow: 0 0 30px $shadow-sm !important;
+        }
+      }
+
+      .content-box {
+        background-color: $bg-content !important;
+        border: 1px solid $border-content !important;
+        box-shadow: 0 0 30px $shadow-sm !important;
+      }
+    }
+
+    header.row {
+      h1 {
+        color: $text-dark !important;
+      }
+
+      a#theme-switcher {
+        color: $text-dark !important;
+
+        &:hover,
+        &:focus {
+          background-color: $bg-hover !important;
+        }
+      }
+    }
+
+    section.row {
+      .content-box:first-child {
+        .block-inputs {
+          color: $text-dark !important;
+
+          .box-input {
+            color: $text-dark !important;
+
+            input {
+              color: $text-dark !important;
+              border: 1px solid $border-input !important;
+              background-color: $bg-input !important;
+            }
+          }
+        }
+
+        .btn#add-input {
+          color: $text-white !important;
+          border: 1px solid $border-primary !important;
+          background-color: $bg-primary !important;
+        }
+      }
+
+      .content-box:last-child {
+        table {
+          td,
+          th {
+            color: $text-dark !important;
+            background-color: $bg-cell-even !important;
+          }
+        }
+
+        .btn#calculate-average {
+          color: $text-white !important;
+          border: 1px solid $border-secondary !important;
+          background-color: $bg-secondary !important;
+        }
+      }
+    }
+
+    footer.row {
+      .social-media {
+        border-bottom: 1px solid $border-content !important;
+
+        a {
+          color: $text-dark !important;
+
+          &:hover {
+            background-color: $bg-hover !important;
+          }
+        }
+      }
+
+      .copy-right {
+        color: $text-dark !important;
+
+        a {
+          color: $bg-primary !important;
+        }
+      }
+    }
+  }
+}

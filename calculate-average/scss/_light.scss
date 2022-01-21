@@ -1,0 +1,123 @@
+$bg-primary: #008aff;
+$bg-secondary: #0097a7;
+$bg-body: #f1f5f8;
+$bg-content: #fff;
+$bg-input: #f1f5f8;
+
+$bg-cell-even: #f6f6f6;
+$bg-cell-odd: #f6f6f6;
+
+$bg-hover: #e6eaed;
+
+$text-white: #fff;
+$text-light: #fff;
+$text-dark: #37474f;
+
+$border-primary: #006dc9;
+$border-secondary: #006a75;
+$border-content: #e5e5e5;
+$border-input: #e5e5e5;
+
+$shadow-sm: rgba(0, 0, 0, 0.05);
+$shadow-md: rgba(0, 0, 0, 0.1);
+$shadow-lg: rgba(0, 0, 0, 0.2);
+
+body {
+  background-color: $bg-body;
+
+  .container {
+    .row {
+      .btn {
+        color: $text-light;
+        box-shadow: 0 0 30px $shadow-md;
+
+        &:hover {
+          box-shadow: 0 0 30px $shadow-sm;
+        }
+      }
+
+      .content-box {
+        background-color: $bg-content;
+        border: 1px solid $border-content;
+        box-shadow: 0 0 30px $shadow-sm;
+      }
+    }
+
+    header.row {
+      h1 {
+        color: $text-dark;
+      }
+
+      a#theme-switcher {
+        color: $text-dark;
+
+        &:hover,
+        &:focus {
+          background-color: $bg-hover;
+        }
+      }
+    }
+
+    section.row {
+      .content-box:first-child {
+        .block-inputs {
+          color: $text-dark;
+
+          .box-input {
+            color: $text-dark;
+
+            input {
+              color: $text-dark;
+              border: 1px solid $border-input;
+              background-color: $bg-input;
+            }
+          }
+        }
+
+        .btn#add-input {
+          color: $text-white;
+          border: 1px solid $border-primary;
+          background-color: $bg-primary;
+        }
+      }
+
+      .content-box:last-child {
+        table {
+          td,
+          th {
+            color: $text-dark;
+            background-color: $bg-cell-even;
+          }
+        }
+
+        .btn#calculate-average {
+          color: $text-white;
+          border: 1px solid $border-secondary;
+          background-color: $bg-secondary;
+        }
+      }
+    }
+
+    footer.row {
+      .social-media {
+        border-bottom: 1px solid $border-content;
+
+        a {
+          color: $text-dark;
+
+          &:hover {
+            background-color: $bg-hover;
+          }
+        }
+      }
+
+      .copy-right {
+        color: $text-dark;
+
+        a {
+          color: $bg-primary;
+        }
+      }
+    }
+  }
+}
