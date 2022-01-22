@@ -73,9 +73,9 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Comfortaa' ,sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 400;
-  direction: rtl;
+  direction: ltr;
   color: #546e7a;
 }
 
@@ -133,6 +133,7 @@ header.top-header .profile {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -142,7 +143,7 @@ header.top-header .profile .profile-img {
 }
 
 header.top-header .profile .profile-name {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 header.top-header .btn-go-back {
@@ -178,6 +179,10 @@ header.top-header .btn-go-back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -191,6 +196,10 @@ header.top-header .btn-go-back {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -358,7 +367,7 @@ header.top-header .btn-go-back {
 .wrapper .task-field #input-task {
   width: 500px;
   height: 50px;
-  border-radius: 0px 6px 6px 0px;
+  border-radius: 6px 0px 0px 6px;
   padding: 5px 8px;
   font-size: 15px;
   background-color: #fff;
@@ -373,7 +382,7 @@ header.top-header .btn-go-back {
 .wrapper .task-field .btn-add-task {
   width: 60px;
   height: 50px;
-  border-radius: 6px 0px 0px 6px;
+  border-radius: 0px 6px 6px 0px;
   border: none;
   padding: 2px 8px;
   background-color: #fff;

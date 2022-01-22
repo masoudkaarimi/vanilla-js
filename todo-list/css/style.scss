@@ -34,9 +34,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Comfortaa' ,sans-serif;
+	font-family: 'Comfortaa', sans-serif;
 	font-weight: 400;
-	direction: rtl;
+	direction: ltr;
 	color: $text_dark;
 }
 
@@ -81,6 +81,7 @@ header.top-header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		text-decoration: none;
 		cursor: pointer;
 		.profile-img {
 			width: 40px;
@@ -88,7 +89,7 @@ header.top-header {
 		}
 
 		.profile-name {
-			margin-right: 10px;
+			margin-left: 10px;
 		}
 	}
 
@@ -125,12 +126,14 @@ header.top-header {
 			.task-actions {
 				margin-top: 15px;
 				display: flex;
+				flex-direction: row-reverse;
 				justify-content: space-between;
 				align-items: center;
 
 				.task-action-right {
 					position: relative;
 					display: flex;
+					flex-direction: row-reverse;
 					justify-content: space-between;
 					align-content: center;
 					height: 30px;
@@ -280,7 +283,7 @@ header.top-header {
 		#input-task {
 			width: 500px;
 			height: 50px;
-			border-radius: 0px 6px 6px 0px;
+			border-radius: 6px 0px 0px 6px;
 			padding: 5px 8px;
 			font-size: 15px;
 			background-color: $bg_light;
@@ -295,7 +298,7 @@ header.top-header {
 		.btn-add-task {
 			width: 60px;
 			height: 50px;
-			border-radius: 6px 0px 0px 6px;
+			border-radius: 0px 6px 6px 0px;
 			border: none;
 			padding: 2px 8px;
 			background-color: $bg_light;
