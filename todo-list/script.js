@@ -89,10 +89,32 @@
         let target = e.target;
         if (target.classList.contains('btn-delete')) {
             let id = target.parentElement.parentElement.parentElement.id.substr(5);
-            if (confirm('Are you sure؟!')) {
-                deleteTask(id);
-                renderTasks();
-            }
+
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                    deleteTask(id);
+                    renderTasks();
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    Swal.fire(
+                        'Cancelled',
+                        'Your file is safe :)',
+                        'error'
+                    )
+                }
+            })
         }
     });
 
@@ -115,12 +137,40 @@
             let task = target.parentElement.parentElement.parentElement;
             let id = task.id.substr(5);
             let title = task.querySelector('.task-content').innerHTML;
-            let newTitle = window.prompt('Edit the following task', title);
 
-            if (newTitle != null) {
-                editTask(id, newTitle);
-                renderTasks();
-            }
+            Swal.fire({
+                title: `Edit ${title}`,
+                input: 'text',
+                inputValue: title,
+                didOpen: () => {
+                    const input = Swal.getInput()
+                    input.setSelectionRange(0, input.value.length)
+                },
+                inputAttributes: {
+                    autocapitalize: 'off'
+                },
+                showCancelButton: true,
+                confirmButtonText: 'Update',
+                showLoaderOnConfirm: true,
+            }).then((result) => {
+                if (result.value === null) return false;
+
+                if(result.isConfirmed) {
+                    Swal.fire(
+                        'Updated!',
+                        'Your file has been updated.',
+                        'success'
+                    )
+                    editTask(id, result.value);
+                    renderTasks();
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    Swal.fire(
+                        'Cancelled',
+                        'Your file is safe :)',
+                        'error'
+                    )
+                }
+            })
         }
     });
 
