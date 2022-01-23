@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Dropdown Menu Slidely</title>
-</head>
-<body>
-   
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dropdown Menu Slidely</title>
+		<script src="https://kit.fontawesome.com/86053d2041.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="drop-btn">Drop down <span class="fas fa-caret-down"></span></div>
+			<div class="tooltip"></div>
+			<div class="wrapper">
+				<ul class="menu-bar">
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-home"></span>
+							</div>
+							<span> Home</span>
+						</a>
+					</li>
+					<li class="setting-item">
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-cog"></span>
+							</div>
+							<span>Settings & privacy</span>
+							<i class="fas fa-angle-right"></i>
+						</a>
+					</li>
+					<li class="help-item">
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-question-circle"></span>
+							</div>
+							<span>Help & support</span>
+							<i class="fas fa-angle-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-user"></span>
+							</div>
+							<span>About us</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-comment-alt"></span>
+							</div>
+							<span>Feedback</span>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Settings & privacy Menu-items -->
+
+				<ul class="setting-drop">
+					<li class="arrow back-setting-btn"><span class="fas fa-arrow-left"></span>Settings & privacy</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-user"></span>
+							</div>
+							<span>Personal info</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-lock"></span>
+							</div>
+							<span>Password</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-address-book"></span>
+							</div>
+							<span>Activity log</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-globe-asia"></span>
+							</div>
+							<span>Languages</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-sign-out-alt"></span>
+							</div>
+							<span>Log out</span>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Help & support Menu-items -->
+
+				<ul class="help-drop">
+					<li class="arrow back-help-btn">
+						<span class="fas fa-arrow-left"></span>
+						<span>Help & support</span>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-question-circle"></span>
+							</div>
+							<span> Help centre</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-envelope"></span>
+							</div>
+							<span>Support Inbox</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-comment-alt"></span>
+							</div>
+							<span>Send feedback</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="icon">
+								<span class="fas fa-exclamation-circle"></span>
+							</div>
+							<span>Report problem</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<script src="./script.js"></script>
+	</body>
 </html>
