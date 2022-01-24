@@ -56,7 +56,6 @@ nav .tooltip.show {
 nav .wrapper {
     position: absolute;
     top: 65px;
-    display: flex;
     width: 400px;
     overflow: hidden;
     border-radius: 5px;
@@ -66,7 +65,6 @@ nav .wrapper {
 }
 
 nav .wrapper.show {
-    display: block;
     display: flex;
 }
 
