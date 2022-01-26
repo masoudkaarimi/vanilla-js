@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple File Uploader Progress Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+    <header>File Uploader Masoud</header>
+    <form action="#">
+        <!-- file-input -->
+        <input class="file-input" type="file" name="file" hidden/>
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Browse File to Upload</p>
+    </form>
+
+    <!-- progress-area -->
+    <section class="progress-area"></section>
+
+    <!-- uploaded-area -->
+    <section class="uploaded-area"></section>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
