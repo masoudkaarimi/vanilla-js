@@ -71,3 +71,11 @@ input {
    border: 3px solid #ddd;
    background-color: #eee;
 }
+
+
+@media screen and (max-width: 600px) {
+   .wrapper {
+      width: 100%;
+      flex-wrap: wrap;
+   }
+}
