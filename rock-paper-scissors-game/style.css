@@ -152,3 +152,36 @@ body {
         transform: translateY(0px);
     }
 }
+
+@media screen and (max-width: 762px) {
+    .score h2 {
+        font-size: 20px;
+    }
+
+    .score p {
+        font-size: 15px;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    .match {
+        width: 100%;
+    }
+
+    .intro button, .match button {
+        font-size: 15px;
+    }
+
+    .winner {
+        font-size: 30px;
+    }
+
+    .swal2-input {
+        height: 45px;
+        font-size: 18px;
+        padding: 0 5px !important;
+        margin: 5px auto !important;
+    }
+}
