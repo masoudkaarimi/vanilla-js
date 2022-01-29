@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<section class="game">
+    <!-- Score -->
+    <div class="score fadeOut">
+        <div class="player-score">
+            <h2> Player </h2>
+            <p>0</p>
+        </div>
+        <div class="computer-score">
+            <h2> Computer </h2>
+            <p>0</p>
+        </div>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro">
+        <h1> Rock Paper Scissors </h1>
+        <button class="btn">Let's play!</button>
+    </div>
+
+    <!-- Match -->
+    <div class="match fadeOut">
+        <h2 class="winner"> Choose an Option </h2>
+        <!-- Hands -->
+        <div class="hands">
+            <img class="player-hand" src="./images/rock-player.png"/>
+            <img class="computer-hand" src="./images/rock-computer.png"/>
+        </div>
+
+        <!-- Options -->
+        <div class="options">
+            <button class="btn rock">
+                <i class="fas fa-hand-rock fa-rotate-90"></i>
+                <span>Rock</span>
+            </button>
+            <button class="btn paper">
+                <i class="fas fa-hand-paper fa-rotate-90"></i>
+                <span>Paper</span>
+            </button>
+            <button class="btn scissors">
+                <i class="fas fa-hand-scissors"></i>
+                <span>Scissors</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
