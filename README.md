@@ -3,6 +3,7 @@ I put every mini-projects I do here
 
 # Table of contents
 - [Calculate average](./calculate-average)
+- [Color flipper](./color-flipper)
 - [Dropdown menu slidely](./dropdown-menu-slidely)
 - [Multiplication table](./multiplication-table)
 - [Password strength checker](./password-strength-checker)

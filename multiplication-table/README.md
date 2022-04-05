@@ -1,7 +1,7 @@
 # Multiplication Table
 
 ## Screenshot
-![Screenshot](./screenshot.png 'Screenshot of Multiplication Table')
+![Screenshot](./screenshot.png)
 
 ## Technologies Used:
 - HTML

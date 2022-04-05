@@ -1,7 +1,7 @@
 # Type Writing Effect
 
 ## Screenshot
-![Screenshot](screenshot.png 'Screenshot of type writing effect')
+![Screenshot](screenshot.png)
 
 ## Technologies Used:
 - HTML

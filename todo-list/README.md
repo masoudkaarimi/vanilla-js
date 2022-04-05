@@ -1,7 +1,7 @@
 # Todo list with JavaScript
 
 ## Screenshot
-![Screenshot](screenshot.png 'Screenshot of todo list with JavaScript')
+![Screenshot](screenshot.png)
 
 ## Technologies Used:
 - HTML

@@ -2,10 +2,10 @@
 
 ## Screenshots
 ### Dark mode
-![Screenshot](./ui/calculate-average-dark-mode.png 'Screenshot of calculate average dark mode')
+![Screenshot](./ui/calculate-average-dark-mode.png)
 
 ### Light mode
-![Screenshot](./ui/calculate-average-light-mode.png 'Screenshot of calculate average light mode')
+![Screenshot](./ui/calculate-average-light-mode.png)
 
 ## Technologies Used:
 - HTML

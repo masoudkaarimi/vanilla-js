@@ -1,7 +1,7 @@
 # Simple Captcha
 
 ## Screenshots
-![Screenshot](./screenshot.png 'Screenshot of simple captcha')
+![Screenshot](./screenshot.png)
 
 ## Technologies Used:
 - HTML
