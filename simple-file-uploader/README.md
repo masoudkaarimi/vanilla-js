@@ -1,7 +1,7 @@
 # Simple File Uploader Progressbar
 
 ## Screenshot
-![Screenshot](screenshot.png)
+![Screenshot](./screenshot.png)
 
 ## Technologies Used:
 - HTML

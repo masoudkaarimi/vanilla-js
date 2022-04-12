@@ -7,6 +7,7 @@ I put every mini-projects I do here
 - [Counter](./counter)
 - [Dropdown menu slidely](./dropdown-menu-slidely)
 - [Multiplication table](./multiplication-table)
+- [Navbar](./navbar)
 - [Password strength checker](./password-strength-checker)
 - [Reviews](./reviews)
 - [Rock paper scissors game](./rock-paper-scissors-game)

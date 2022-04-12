@@ -1,7 +1,7 @@
 # Simple calculator
 
 ## Screenshot
-![Screenshot](screenshot.png)
+![Screenshot](./screenshot.png)
 
 ## Technologies Used:
 - HTML

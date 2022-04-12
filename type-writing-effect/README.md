@@ -1,7 +1,7 @@
 # Type Writing Effect
 
 ## Screenshot
-![Screenshot](screenshot.png)
+![Screenshot](./screenshot.png)
 
 ## Technologies Used:
 - HTML

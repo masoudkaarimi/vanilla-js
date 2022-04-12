@@ -1,7 +1,7 @@
 # Todo list with JavaScript
 
 ## Screenshot
-![Screenshot](screenshot.png)
+![Screenshot](./screenshot.png)
 
 ## Technologies Used:
 - HTML
