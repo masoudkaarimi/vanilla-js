@@ -6,6 +6,7 @@ I put every mini-projects I do here
 - [Color flipper](./color-flipper)
 - [Counter](./counter)
 - [Dropdown menu slidely](./dropdown-menu-slidely)
+- [Modal](./modal)
 - [Multiplication table](./multiplication-table)
 - [Navbar](./navbar)
 - [Password strength checker](./password-strength-checker)
