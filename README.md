@@ -2,6 +2,7 @@
 I put every mini-projects I do here
 
 # Table of contents
+- [Accordion](./accordion)
 - [Calculate average](./calculate-average)
 - [Color flipper](./color-flipper)
 - [Counter](./counter)
