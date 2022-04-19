@@ -193,7 +193,7 @@ Menu
 }
 .filter-btn {
   background: transparent;
-  border-color: var(--clr-gold);
+  border: 0;
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
@@ -204,7 +204,8 @@ Menu
   cursor: pointer;
   transition: var(--transition);
 }
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn.active {
   background: var(--clr-gold);
   color: var(--clr-white);
 }
