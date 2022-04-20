@@ -7,6 +7,7 @@ I put every mini-projects I do here
 - [Color flipper](./color-flipper)
 - [Counter](./counter)
 - [Dropdown menu slidely](./dropdown-menu-slidely)
+- [Menu](./menu)
 - [Modal](./modal)
 - [Multiplication table](./multiplication-table)
 - [Navbar](./navbar)
