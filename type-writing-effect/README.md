@@ -1,4 +1,4 @@
-# Type Writing Effect
+# Type writing effect
 
 ## Screenshot
 ![Screenshot](./screenshot.png)
