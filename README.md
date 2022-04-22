@@ -20,3 +20,4 @@ I put every mini-projects I do here
 - [Simple file uploader](./simple-file-uploader)
 - [Todo list](./todo-list)
 - [Type writing effect](./type-writing-effect)
+- [Video project](./video-project)
