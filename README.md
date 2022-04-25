@@ -14,6 +14,7 @@ I put every mini-projects I do here
 - [Password strength checker](./password-strength-checker)
 - [Reviews](./reviews)
 - [Rock paper scissors game](./rock-paper-scissors-game)
+- [Scroll](./scroll)
 - [Sidebar](./sidebar)
 - [Simple calculator](./simple-calculator)
 - [Simple captcha](./simple-captcha)
