@@ -8,6 +8,7 @@ I put every mini-projects I do here
 - [Countdown timer](./countdown-timer)
 - [Counter](./counter)
 - [Dropdown menu slidely](./dropdown-menu-slidely)
+- [Lorem ipsum generator](./lorem-ipsum-generator)
 - [Menu](./menu)
 - [Modal](./modal)
 - [Multiplication table](./multiplication-table)
