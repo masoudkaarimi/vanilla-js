@@ -73,3 +73,15 @@ function addItem(e) {
 		displayAlert('please enter value', 'danger');
 	}
 }
+
+// Display alert
+function displayAlert(text, action) {
+	alert.textContent = text;
+	alert.classList.add(`alert-${action}`);
+	// remove alert
+	setTimeout(function () {
+		alert.textContent = '';
+		alert.classList.remove(`alert-${action}`);
+	}, 1000);
+}
+
