@@ -98,3 +98,41 @@ function clearItems() {
 	setBackToDefault();
 	localStorage.removeItem('list');
 }
+
+// Delete item
+function deleteItem(e) {
+	const element = e.currentTarget.parentElement.parentElement;
+	const id = element.dataset.id;
+
+	list.removeChild(element);
+
+	if (list.children.length === 0) {
+		container.classList.remove('show-container');
+	}
+	displayAlert('item removed', 'danger');
+
+	setBackToDefault();
+	// remove from local storage
+	removeFromLocalStorage(id);
+}
+
+// Edit item
+function editItem(e) {
+	const element = e.currentTarget.parentElement.parentElement;
+	// set edit item
+	editElement = e.currentTarget.parentElement.previousElementSibling;
+	// set form value
+	grocery.value = editElement.innerHTML;
+	editFlag = true;
+	editID = element.dataset.id;
+	//
+	submitBtn.textContent = 'edit';
+}
+
+// Set back to defaults
+function setBackToDefault() {
+	grocery.value = '';
+	editFlag = false;
+	editID = '';
+	submitBtn.textContent = 'submit';
+}
