@@ -85,3 +85,16 @@ function displayAlert(text, action) {
 	}, 1000);
 }
 
+// Clear items
+function clearItems() {
+	const items = document.querySelectorAll('.grocery-item');
+	if (items.length > 0) {
+		items.forEach((item) => {
+			list.removeChild(item);
+		});
+	}
+	container.classList.remove('show-container');
+	displayAlert('empty list', 'danger');
+	setBackToDefault();
+	localStorage.removeItem('list');
+}
