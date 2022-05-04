@@ -119,13 +119,12 @@ function deleteItem(e) {
 // Edit item
 function editItem(e) {
 	const element = e.currentTarget.parentElement.parentElement;
-	// set edit item
+	// Set edit item
 	editElement = e.currentTarget.parentElement.previousElementSibling;
-	// set form value
+	// Set form value
 	grocery.value = editElement.innerHTML;
 	editFlag = true;
 	editID = element.dataset.id;
-	//
 	submitBtn.textContent = 'edit';
 }
 
@@ -135,4 +134,39 @@ function setBackToDefault() {
 	editFlag = false;
 	editID = '';
 	submitBtn.textContent = 'submit';
+}
+
+// ========== Local storage ==========
+// Add data to local storage
+function addToLocalStorage(id, value) {
+	const grocery = { id, value };
+	let items = getLocalStorage();
+	items.push(grocery);
+	localStorage.setItem('list', JSON.stringify(items));
+}
+
+// Get local storage data
+function getLocalStorage() {
+	return localStorage.getItem('list') ? JSON.parse(localStorage.getItem('list')) : [];
+}
+
+// Remove data from local storage
+function removeFromLocalStorage(id) {
+	let items = getLocalStorage();
+	items = items.filter((item) => item.id !== id);
+	localStorage.setItem('list', JSON.stringify(items));
+}
+
+// Edit local storage data
+function editLocalStorage(id, value) {
+	let items = getLocalStorage();
+
+	items = items.map((item) => {
+		if (item.id === id) {
+			item.value = value;
+		}
+		return item;
+	});
+	
+	localStorage.setItem('list', JSON.stringify(items));
 }
