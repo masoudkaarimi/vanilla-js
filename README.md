@@ -22,6 +22,7 @@ I put every mini-projects I do here
 - [Simple calculator](./simple-calculator)
 - [Simple captcha](./simple-captcha)
 - [Simple file uploader](./simple-file-uploader)
+- [Simple slider](./simple-slider/)
 - [Simple tabs](./simple-tabs)
 - [Todo list](./todo-list)
 - [Type writing effect](./type-writing-effect)
