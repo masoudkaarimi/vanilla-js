@@ -73,3 +73,23 @@ PrototypeGallery.prototype.closeModal = function () {
 	this.prevBtn.removeEventListener('click', this.prevImage);
 	this.modalImages.removeEventListener('click', this.chooseImage);
 };
+
+// Next image method
+PrototypeGallery.prototype.nextImage = function () {
+	const selected = this.modalImages.querySelector('.selected');
+	const next = selected.nextElementSibling || this.modalImages.firstElementChild;
+
+	selected.classList.remove('selected');
+	next.classList.add('selected');
+	this.setMainImage(next);
+};
+
+// Previous image method
+PrototypeGallery.prototype.prevImage = function () {
+	const selected = this.modalImages.querySelector('.selected');
+	const prev = selected.previousElementSibling || this.modalImages.lastElementChild;
+
+	selected.classList.remove('selected');
+	prev.classList.add('selected');
+	this.setMainImage(prev);
+};
