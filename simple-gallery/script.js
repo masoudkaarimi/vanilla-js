@@ -64,3 +64,12 @@ PrototypeGallery.prototype.setMainImage = function (selectedImage) {
 	this.modalImg.src = selectedImage.src;
 	this.imageName.textContent = selectedImage.title;
 };
+
+// Close modal method
+PrototypeGallery.prototype.closeModal = function () {
+	this.modal.classList.remove('open');
+	this.closeBtn.removeEventListener('click', this.closeModal);
+	this.nextBtn.removeEventListener('click', this.nextImage);
+	this.prevBtn.removeEventListener('click', this.prevImage);
+	this.modalImages.removeEventListener('click', this.chooseImage);
+};
