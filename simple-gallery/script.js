@@ -93,3 +93,16 @@ PrototypeGallery.prototype.prevImage = function () {
 	prev.classList.add('selected');
 	this.setMainImage(prev);
 };
+
+// Choose image method
+PrototypeGallery.prototype.chooseImage = function (e) {
+	if (e.target.classList.contains('modal-img')) {
+		const selected = this.modalImages.querySelector('.selected');
+
+		selected.classList.remove('selected');
+		this.setMainImage(e.target);
+		e.target.classList.add('selected');
+	}
+};
+
+const nature = new PrototypeGallery(getElement('.nature'));
