@@ -139,6 +139,33 @@ class ClassGallery {
 		);
 	}
 
+	// Open modal method
+	openModal(selectedImage, list) {
+		// Set main image
+		this.setMainImage(selectedImage);
+
+		this.modalImages.innerHTML = list
+			.map(function (image) {
+				return `<img src="${
+					image.src
+				}" title="${image.title}" data-id="${image.dataset.id}" class="${selectedImage.dataset.id === image.dataset.id ? 'modal-img selected' : 'modal-img'}"/>`;
+			})
+			.join('');
+
+		this.modal.classList.add('open');
+		this.closeBtn.addEventListener('click', this.closeModal);
+		this.nextBtn.addEventListener('click', this.nextImage);
+		this.prevBtn.addEventListener('click', this.prevImage);
+		this.modalImages.addEventListener('click', this.chooseImage);
+	}
+
+	// Set main image method
+	setMainImage(selectedImage) {
+		this.modalImg.src = selectedImage.src;
+		this.imageName.textContent = selectedImage.title;
+	}
+
+
 }
 
 const city = new ClassGallery(getElement('.city'));
