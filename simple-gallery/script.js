@@ -164,7 +164,7 @@ class ClassGallery {
 		this.modalImg.src = selectedImage.src;
 		this.imageName.textContent = selectedImage.title;
 	}
-
+	
 	// Close modal method
 	closeModal() {
 		this.modal.classList.remove('open');
@@ -172,6 +172,26 @@ class ClassGallery {
 		this.nextBtn.removeEventListener('click', this.nextImage);
 		this.prevBtn.removeEventListener('click', this.prevImage);
 		this.modalImages.removeEventListener('click', this.chooseImage);
+	}
+
+	// Next image method
+	nextImage() {
+		const selected = this.modalImages.querySelector('.selected');
+		const next = selected.nextElementSibling || this.modalImages.firstElementChild;
+
+		selected.classList.remove('selected');
+		next.classList.add('selected');
+		this.setMainImage(next);
+	}
+
+	// Previous image method
+	prevImage() {
+		const selected = this.modalImages.querySelector('.selected');
+		const prev = selected.previousElementSibling || this.modalImages.lastElementChild;
+
+		selected.classList.remove('selected');
+		prev.classList.add('selected');
+		this.setMainImage(prev);
 	}
 
 
