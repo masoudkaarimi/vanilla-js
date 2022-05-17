@@ -204,7 +204,6 @@ class ClassGallery {
 			e.target.classList.add('selected');
 		}
 	}
-
 }
 
 const city = new ClassGallery(getElement('.city'));
