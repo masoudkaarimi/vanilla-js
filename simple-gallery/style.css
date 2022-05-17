@@ -130,15 +130,28 @@ p {
 }
 /*  global classes */
 
-/* section */
-.section {
-	padding: 5rem 0;
-	width: 90vw;
+/* Container */
+.container {
+	max-width: 1200px;
 	margin: 0 auto;
-	max-width: 1170px;
+	padding: 2rem;
+}
+
+.container .row {
+	margin-bottom: 70px;
+	max-width: 980px;
 	display: grid;
 	gap: 2rem;
 }
+
+/* section */
+.section {
+	margin: 0 auto;
+	max-width: 980px;
+	display: grid;
+	gap: 1rem;
+}
+
 @media screen and (min-width: 768px) {
 	.section {
 		display: grid;
