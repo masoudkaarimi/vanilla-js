@@ -7,6 +7,7 @@ I put every mini-projects I do here
 - [Color flipper](./color-flipper)
 - [Countdown timer](./countdown-timer)
 - [Counter](./counter)
+- [Dark mode](./dark-mode)
 - [Dropdown menu slidely](./dropdown-menu-slidely)
 - [Grocery bud](./grocery-bud)
 - [Lorem ipsum generator](./lorem-ipsum-generator)
