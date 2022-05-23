@@ -44,3 +44,33 @@ form.addEventListener('keyup', (e) => {
 	displayProducts();
 });
 
+// Show company buttons
+const displayCompanyButtons = () => {
+	const buttons = ['all', ...new Set(products.map((product) => product.company))];
+	// console.log(buttons);
+
+	companiesDOM.innerHTML = buttons
+		.map((company) => {
+			return `<button class='company-btn' data-id="${company}">${company}</button>`;
+		})
+		.join('');
+};
+displayCompanyButtons();
+
+// Company filter handler
+companiesDOM.addEventListener('click', (e) => {
+	const el = e.target;
+	// console.log(el);
+
+	if (el.classList.contains('company-btn')) {
+		if (el.dataset.id === 'all') {
+			filteredProducts = [...products];
+		} else {
+			filteredProducts = products.filter((product) => {
+				return product.company === el.dataset.id;
+			});
+		}
+		searchInput.value = '';
+		displayProducts();
+	}
+});
