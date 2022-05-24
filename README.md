@@ -24,6 +24,7 @@ I put every mini-projects I do here
 - [Simple calculator](./simple-calculator)
 - [Simple captcha](./simple-captcha)
 - [Simple file uploader](./simple-file-uploader)
+- [Simple filters](./simple-filters)
 - [Simple gallery](./simple-gallery)
 - [Simple slider](./simple-slider)
 - [Simple tabs](./simple-tabs)
