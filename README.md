@@ -17,6 +17,7 @@ I put every mini-projects I do here
 - [Navbar](./navbar)
 - [Number counters](./number-counters)
 - [Password strength checker](./password-strength-checker)
+- [Random dad jokes](./random-dad-jokes)
 - [Reviews](./reviews)
 - [Rock paper scissors game](./rock-paper-scissors-game)
 - [Scroll](./scroll)
