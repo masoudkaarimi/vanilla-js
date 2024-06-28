@@ -1,5 +1,5 @@
 # Vanilla JS
-I put every mini-projects I do here
+I put every mini-project I do here
 
 # Table of contents
 - [Accordion](./accordion)
