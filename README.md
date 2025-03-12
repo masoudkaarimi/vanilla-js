@@ -1,4 +1,4 @@
-# Vanilla JS
+# JavaScript Mini Projects
 I put every mini-project I do here
 
 # Table of contents
