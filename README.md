@@ -10,6 +10,7 @@ I put every mini-project I do here
 - [Dark mode](./dark-mode)
 - [Dropdown menu slidely](./dropdown-menu-slidely)
 - [Grocery bud](./grocery-bud)
+- [JavaScript Helpers](./javascript-helpers)
 - [Lorem ipsum generator](./lorem-ipsum-generator)
 - [Menu](./menu)
 - [Modal](./modal)
